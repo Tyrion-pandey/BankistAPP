@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/style.css">
+    <title>Bankist App</title>
+</head>
+<body>
+    <div class="confirmbox">
+      <div class="alert alert-success alert-dismissable alertbox">
+        
+        <strong>Succcess </strong> Your request has been Completed!
+        <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+      </div>
+    </div>
+    <header class="row navbar bg-light">
+      <h2>Bankist app</h2>
+      <button class="float-right btn btn-warning logoutbtn" style="float: right; display: none;">LogOut</button>
+    </header>
+    <div class="loginsection">
+     
+    <form class="form" action="">
+      <div class="loginerror alert alert-danger"></div>
+      <input type="text" name="user" class="username form-control" placeholder="valid usernames are zi,ms,dj,md"/>
+      <input type="password" name="pwd" class="pwd form-control" placeholder="Password are 1111,4444,3333,2222"/>
+      <input class="loginbtn btn btn-danger" type="button" value="Login">
+      
+    </form>
+    <img src="/bgimage.png" class="image"/>
+  </div>
+  
+    <div class="welcometext" style="display: none;"><div class="nameplace"><img src="/welcomeimage.png" width="100%"></div><div class="dateandbal">Available Balance: 25000 as on 21/04/21</div></div>
+    <div class="main" style="display: none;">
+      <div class="table item bg-light">
+        <table class="stattable table table-striped table-dark">
+         <tbody>
+           <thead>
+            <tr class="recordTable">
+              <th class="bg-primary" scope="col">S.No.</th>
+              <th class="bg-primary" scope="col">Transaction Type</th>
+              <th class="bg-primary" scope="col">Amount</th>
+            </tr>
+          </thead>
+          </tbody>
+          </table>
+          
+      </div>
+      <div class="actionpack item">
+        <div class="actiontype">
+          <label for="user">Deposit</label>
+          <input type="number" class="depositamt form-control"/>
+          <p class="info"></p>
+          <input type="button" class="depbtn btn" disabled value="Go">
+        </div>
+        <div class="actiontype">
+          <label for="user">Withdraw</label>
+          <input type="number" class="withdrawamt form-control"/>
+          <p class="info"></p>
+          <input type="button" class="witbtn btn" disabled value="Go">
+        </div>
+        <div class="actiontype">
+          
+          <label for="user">Transfer To:</label>
+          <input type="text" class="transferuser form-control"/>
+          <label for="user">Amount</label>
+          
+          <input type="number" class="transferamt form-control"/>
+          <p class="info"></p>
+          <input type="button" class="trabtn btn" disabled value="Go">
+          
+        </div>
+      </div>
+    </div>
+    <script src="/script.js"></script>
+    </body>
+</html>
